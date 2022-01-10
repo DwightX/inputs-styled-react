@@ -16,6 +16,10 @@ function App() {
         <Input title="<Input />" label="Label" type="text" placeholder="Placeholder">Default</Input>
       </div>
 
+      <div className="row">
+        <Input color="error" title="<Input error/>" label="Label" type="text" placeholder="Placeholder">Default</Input>
+      </div>
+
 
 
       <div className="row footer">

@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Label, Container, InputField,Title } from "./styles.js";
 
-function Input({type, placeholder, label,title}) {
+function Input({type, placeholder, label,title,color}) {
   const [name, setName] = useState("");
 
   const onChange = (e) => {
@@ -19,6 +19,7 @@ function Input({type, placeholder, label,title}) {
         value={name}
         placeholder={placeholder}
         onChange={onChange}
+        color={color}
       />
     </Container>
   );

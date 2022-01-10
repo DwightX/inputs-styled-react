@@ -25,6 +25,9 @@
 .App-link {
   color: #61dafb;
 }
+input,input:hover, input:focus, input:focus-visible{
+  outline: none;
+}
 
 @keyframes App-logo-spin {
   from {
