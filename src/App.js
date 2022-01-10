@@ -24,6 +24,9 @@ function App() {
         <Input disabled="true "color="error" title="<Input disabled/>" label="Label" type="text" placeholder="Placeholder">Default</Input>
       </div>
 
+      <div className="row">
+        <Input helper="Some interesting text" color="error textColor" title="<Input helperText=”Some interesting text/>" label="Label" type="text" placeholder="Placeholder">Default</Input>
+      </div>
 
       <div className="row footer">
           <p> created by <span className="spanName">Dwightx</span> - devChallenges.io</p>

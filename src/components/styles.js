@@ -3,9 +3,18 @@ import styled from "styled-components";
 const handleColorType = color => {
     switch (color) {
       case "error":
-        return "border: 1px solid red ; [type=Text]&:focus {border: 1px solid red} ; &:hover {border: 1px solid black}";
+        return "border: 1px solid red ; [type=Text]&:focus {border: 1px solid red} ; &:hover {border: 1px solid black} ; color:red";
       default:
-        return "border: 1px solid #828282";
+        return "border: 1px solid #828282 ; [type=Text]&:focus {border: 1px solid red} ; &:hover {border: 1px solid black} ";
+    }
+  };
+
+  const handleColorText = textColor => {
+    switch (textColor) {
+      case "errorText":
+        return "color:red";
+      default:
+        return "color:#333333";
     }
   };
 
@@ -23,6 +32,13 @@ color: #333333;
 position: relative;
 margin-bottom:6px;
 `
+const Helper = styled.label`
+font-size: 12px;
+${({ textColor }) => handleColorText(textColor)};
+position: relative;
+margin-top:6px;
+`
+
 const Container = styled.div`
 display:flex;
 flex-direction: column;
@@ -35,4 +51,4 @@ position: relative;
 margin-bottom:12px;
 `
 
-export {Label,InputField,Container,Title}
+export {Label,InputField,Container,Title,Helper}

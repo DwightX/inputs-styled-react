@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import { Label, Container, InputField,Title } from "./styles.js";
+import { Label, Container, InputField,Title,Helper } from "./styles.js";
 
-function Input({type, placeholder, label,title,color,disabled}) {
+function Input({type, placeholder, label,title,color,disabled,helper,}) {
   const [name, setName] = useState("");
 
   const onChange = (e) => {
@@ -22,6 +22,7 @@ function Input({type, placeholder, label,title,color,disabled}) {
         color={color}
         disabled={disabled}
       />
+      <Helper color={color}>{helper}</Helper>
     </Container>
   );
 }
