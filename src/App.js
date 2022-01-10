@@ -20,6 +20,9 @@ function App() {
         <Input color="error" title="<Input error/>" label="Label" type="text" placeholder="Placeholder">Default</Input>
       </div>
 
+      <div className="row">
+        <Input disabled="true "color="error" title="<Input disabled/>" label="Label" type="text" placeholder="Placeholder">Default</Input>
+      </div>
 
 
       <div className="row footer">

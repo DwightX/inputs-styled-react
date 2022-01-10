@@ -15,6 +15,7 @@ height: 56px;
 border-radius: 8px;
 box-sizing: border-box;
 ${({ color }) => handleColorType(color)};
+&:disabled {background-color: #F2F2F2; border: none}
 `
 const Label = styled.label`
 font-size: 12px;
